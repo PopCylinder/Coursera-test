@@ -1,0 +1,200 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:rgb(46, 41, 41);
+}
+
+.dscmembers{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-left: 95px;
+}
+
+/*navbar css start*/
+
+li, a, button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px 122px 30px 65px;
+}
+
+.nav__links{
+    list-style: none;
+    float: left;
+}
+
+.nav__links li{
+    float: left;
+    padding: 0px 30px;
+}
+
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: yellow;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(8, 94, 116);
+}
+
+/*navbar css end*/
+
+/*Text Box Css Start*/
+.section img{
+    height: 250px;
+    border-radius: 25px;
+ }
+
+ .section{
+    background-color: rgb(46, 41, 41);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 30px 30px;
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 65px;
+ }
+
+ .section h1{
+    margin-top: 0px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: greenyellow;
+ }
+
+ .section p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    color: #c0bdbd;
+    margin-right: 15px;
+ }
+
+ /*Text Box Css End*/
+
+ .dscmembers{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+ }
+
+ /*scroller css start*/
+
+ .scroller{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+ }
+
+ .scroll{
+    position: relative;
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+ }
+
+ .scroll div{
+    white-space: nowrap;
+    animation: animate var(--t) linear infinite;
+    animation-delay: calc(var(--t) / -1);
+ }
+
+ .scroll div:nth-child(2){
+    animation: animate2 var(--t) linear infinite;
+    animation-delay: calc(var(--t) / -2);
+ }
+
+
+ @keyframes animate{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+ }
+
+ @keyframes animate2{
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(-200%);
+    }
+ }
+
+ .scroll div span{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    display: inline-flex;
+    margin: 10px;
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+ }
+.imgbx img{
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    scale: 0.8;
+    filter: grayscale(1);
+ }
+
+ .imgbx img:hover{
+    transition: 0.3s;
+    filter: grayscale(0);
+ }
+
+ .imgscroller{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+ }
+
+ /*scroller css end*/
+
+ .stickmen{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-left: 17%;
+ }
